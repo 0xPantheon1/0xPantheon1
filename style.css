@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: #000; /* чёрный фон */
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+header {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: cyan;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.slogan p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
