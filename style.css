@@ -1,41 +1,39 @@
-html, body {
+/* Подключаем киберпанковский шрифт из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
+    box-sizing: border-box;
 }
 
 body {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
     background: url("images/bg.png") no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Orbitron', sans-serif;
-    color: #00ffff;
-    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
-/* Шапка */
+/* Лого в правом верхнем углу */
 header {
-    width: 100%;
-    padding: 20px;
     position: fixed;
-    top: 0;
-    left: 0;
-    text-align: right;
-    font-size: 1.5em;
+    top: 20px;
+    right: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #00fff7;
+    text-shadow: 0 0 10px #00fff7, 0 0 20px #ff00ff;
 }
 
-/* Логотип */
-.logo {
-    color: #00ffff;
-}
-
-/* Контент */
+/* Центрируем слоган */
 main {
     flex: 1;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -43,29 +41,7 @@ main {
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 0.5em;
-}
-
-p {
-    font-size: 1.2em;
-    max-width: 800px;
-}
-
-/* Подвал */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Эффект плавного появления */
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    font-size: 28px;
+    max-width: 900px;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #00fff7;
 }
